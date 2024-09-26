@@ -286,6 +286,10 @@ body .block1 .block1__photo-text .image2 {
   }
 }
 @media (max-width: 900px) {
+  body .block1 {
+    background-image: url(../images/background_1copy_one.png);
+    background-size: cover;
+  }
   body .block1 .block1__header .hamburger-menu {
     display: block;
   }
@@ -314,6 +318,10 @@ body .block1 .block1__photo-text .image2 {
   }
 }
 @media (max-width: 600px) {
+  body .block1 {
+    background-image: url(../images/background_1copy_two.png);
+    background-size: cover;
+  }
   body .block1 .block1__line {
     display: none;
   }
@@ -337,11 +345,17 @@ body .block1 .block1__photo-text .image2 {
   }
 }
 @media (max-width: 1050px) {
+  body .block1 {
+    height: 1000px;
+  }
   body .block1 .block1__photo-text {
     width: 1000px;
   }
 }
 @media (max-width: 1000px) {
+  body .block1 {
+    height: 800px;
+  }
   body .block1 .block1__photo-text {
     width: 900px;
   }
@@ -353,20 +367,25 @@ body .block1 .block1__photo-text .image2 {
   }
 }
 @media (max-width: 900px) {
+  body {
+    height: 730px;
+  }
   body .block1 {
-    height: 600px;
+    background-image: url(../images/background_1copy_one.png);
+    background-size: cover;
+    height: 700px;
   }
   body .block1 .block1__photo-text {
     width: 100%;
     justify-content: center;
-    height: 350px;
+    height: 290px;
   }
   body .block1 .block1__photo-text .image1 {
     display: none;
   }
   body .block1 .block1__photo-text .block-text {
     width: 478px;
-    height: 350px;
+    height: 260px;
   }
   body .block1 .block1__photo-text .block-text p {
     font-size: 14px;
@@ -375,19 +394,41 @@ body .block1 .block1__photo-text .image2 {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  body {
+    height: 650px;
+  }
+  body .block1 {
+    height: 600px;
+  }
+}
 @media (max-width: 600px) {
+  body {
+    height: 660px;
+  }
+  body .block1 {
+    background-image: url(../images/background_1copy_two.png);
+    background-size: cover;
+    height: 660px;
+  }
   body .block1 .block1__photo-text {
     height: 350px;
   }
   body .block1 .block1__photo-text .block-text {
     width: 365px;
-    height: 350px;
+    height: 300px;
   }
   body .block1 .block1__photo-text .block-text p {
     height: 170px;
   }
 }
 @media (max-width: 400px) {
+  body {
+    height: 580px;
+  }
+  body .block1 {
+    height: 580px;
+  }
   body .block1 .block1__photo-text .block-text {
     width: 300px;
   }
