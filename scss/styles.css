@@ -438,7 +438,7 @@ body .block1 .block1__photo-text .image2 {
 }
 body .block2 {
   width: 100%;
-  height: 650px;
+  height: 580px;
   background-color: #271430;
   padding-top: 80px;
 }
@@ -987,5 +987,289 @@ body .block2 .block2__slider .cards_slider .cards .card_3 .block .block-photo .p
   }
   body .block2__slider .cards_slider .cards .card_1 .card_3 .block .block-photo .border .photo3 {
     left: 628px !important;
+  }
+}
+body .block3 {
+  width: 100%;
+  height: 280px;
+  background-image: url(../images/background-block3.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body .block3 .block3__ellipse {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #3D006E;
+  filter: blur(256px);
+  margin: 0 auto 0 auto;
+  position: absolute;
+  left: 640px;
+}
+body .block3 h1 {
+  color: #C9AB79;
+  text-align: center;
+  font-family: "Garamont";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+body .block3 p {
+  color: var(--white, #E5E0D4);
+  text-align: center;
+  font-family: "montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 490px;
+}
+
+@media (max-width: 900px) {
+  body .block3 {
+    background-image: url(../images/background-block3_900.png);
+    background-size: cover;
+  }
+  body .block3 h1 {
+    margin-top: 80px;
+  }
+  body .block3 .block3__ellipse {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  body .block3 {
+    background-image: none;
+    height: 400px;
+  }
+  body .block3 h1 {
+    font-size: 45px;
+  }
+  body .block3 p {
+    width: 350px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+  body .block3 {
+    height: 360px;
+  }
+  body .block3 p {
+    font-size: 16px;
+    width: 300px;
+  }
+}
+body .block4 {
+  width: 100%;
+  height: 160px;
+  background-color: #271430;
+  display: flex;
+  justify-content: space-around;
+}
+body .block4 .block4__boxes {
+  width: 1070px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+body .block4 .block4__boxes .box1 {
+  width: 279px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+body .block4 .block4__boxes .box1 .image {
+  height: 40px;
+  width: 47px;
+  background-color: #3D006E;
+  background-image: url(../images/crystal_from_block4.png);
+  background-size: cover;
+  margin-right: 10px;
+}
+body .block4 .block4__boxes .box1 .textes {
+  width: 217px;
+  height: 65px;
+}
+body .block4 .block4__boxes .box1 .textes h1 {
+  color: #C9AB79;
+  font-family: "montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+body .block4 .block4__boxes .box1 .textes p {
+  color: #E5E0D4;
+  font-family: "montserrat";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+}
+body .block4 .block4__boxes .box2 {
+  width: 385px;
+  height: 70px;
+  display: flex;
+}
+body .block4 .block4__boxes .box2 .image {
+  width: 66px;
+  height: 48px;
+  background-image: url(../images/people_group.png);
+  background-size: cover;
+  margin-right: 10px;
+}
+body .block4 .block4__boxes .box2 .textes {
+  width: 305px;
+  height: 65px;
+}
+body .block4 .block4__boxes .box2 .textes h1 {
+  color: #C9AB79;
+  font-family: "montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+body .block4 .block4__boxes .box2 .textes p {
+  color: #E5E0D4;
+  font-family: "montserrat";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+body .block4 .block4__boxes .box3 {
+  width: 360px;
+  height: 70px;
+  display: flex;
+}
+body .block4 .block4__boxes .box3 .image {
+  width: 47px;
+  height: 47px;
+  background-image: url(../images/ecology_image.png);
+  background-size: cover;
+  margin-right: 10px;
+}
+body .block4 .block4__boxes .box3 .textes {
+  width: 293px;
+  height: 65px;
+}
+body .block4 .block4__boxes .box3 .textes h1 {
+  color: #C9AB79;
+  font-family: "montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+body .block4 .block4__boxes .box3 .textes p {
+  color: #E5E0D4;
+  font-family: "montserrat";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (max-width: 1070px) {
+  body .block4 {
+    height: 600px;
+  }
+  body .block4 .block4__boxes {
+    height: 530px;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .block4 .block4__boxes .box1 {
+    height: 155px;
+    flex-direction: column;
+  }
+  body .block4 .block4__boxes .box1 .image {
+    height: 60px;
+    width: 67px;
+    margin-bottom: 5px;
+  }
+  body .block4 .block4__boxes .box1 .textes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 250px;
+  }
+  body .block4 .block4__boxes .box1 .textes h1 {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  body .block4 .block4__boxes .box1 .textes p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  body .block4 .block4__boxes .box2 {
+    height: 155px;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+  }
+  body .block4 .block4__boxes .box2 .image {
+    height: 60px;
+    width: 77px;
+    margin-bottom: 5px;
+  }
+  body .block4 .block4__boxes .box2 .textes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 260px;
+  }
+  body .block4 .block4__boxes .box2 .textes h1 {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  body .block4 .block4__boxes .box2 .textes p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  body .block4 .block4__boxes .box3 {
+    height: 165px;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+  }
+  body .block4 .block4__boxes .box3 .image {
+    height: 70px;
+    width: 72px;
+    margin-bottom: 5px;
+  }
+  body .block4 .block4__boxes .box3 .textes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 270px;
+  }
+  body .block4 .block4__boxes .box3 .textes h1 {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  body .block4 .block4__boxes .box3 .textes p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=styles.css.map */
