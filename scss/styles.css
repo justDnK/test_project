@@ -1591,6 +1591,8 @@ body .block6 {
     margin: 0 auto 0 auto;
     margin-top: 30px !important;
     font-size: 14px;
+    height: 50px;
+    width: 160px;
   }
   body .block5 .block5__container .block_textes .form__email {
     margin-top: 25px;
