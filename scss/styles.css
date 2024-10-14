@@ -1999,7 +1999,6 @@ body .block1_catalog .adaptive-slide .cards_slider .cards {
   }
   body .block1_catalog .block2__slider {
     width: 74%;
-    overflow: hidden;
   }
   body .block1_catalog .block2__slider .cards__slider .cards {
     width: 74%;
@@ -2060,8 +2059,8 @@ body .block1_catalog .adaptive-slide .cards_slider .cards {
   body .block1_catalog .adaptive-slide {
     display: flex;
   }
-  body .block1_catalog .adaptive-slide .cards_slider .cards {
-    width: 1025px;
+  body .block1_catalog .adaptive-slide .cards_slider {
+    width: 1025px !important;
   }
   body .block1_catalog .adaptive-slide .cards_slider .cards .card_1 {
     margin-right: 0px;
