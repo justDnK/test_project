@@ -2345,6 +2345,8 @@ body .footer .icons a {
 body .footer .icons a .icons__whatsapp {
   width: 32px;
   height: 32px;
+  background-image: url(../images/whatsapp.svg);
+  background-size: cover;
 }
 body .footer .icons .icons__space {
   width: 10px;
@@ -2357,6 +2359,8 @@ body .footer .icons a .icons__inst {
   width: 32px;
   height: 32px;
   margin: 0;
+  background-image: url(../images/instagram.svg);
+  background-size: cover;
 }
 body .footer .footer__menu-adaptive a p {
   font-size: 20px;
