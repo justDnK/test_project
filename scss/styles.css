@@ -10879,4 +10879,41 @@ body .block-end {
     font-size: 16px !important;
     font-weight: lighter;
   }
+}
+body .block1-contact {
+  width: 1070px;
+  margin: 0 auto 0 auto;
+}
+body .block1-contact .block1__header {
+  width: 1070px;
+  padding-left: 0px;
+}
+body .block1-contact .block1__line {
+  width: 1070px;
+}
+body .block1-contact .block1__goldenText-contact {
+  width: 100% !important;
+}
+body .block5-contact {
+  margin-top: 45px;
+}
+
+@media (max-width: 1150px) {
+  body .block1-contact {
+    width: 95%;
+  }
+  body .block1-contact .block1__header {
+    width: 95%;
+  }
+  body .block1-contact .block1__line {
+    width: 95%;
+  }
+  body .block1-contact .block1__goldenText-contact {
+    width: 95% !important;
+  }
+}
+@media (max-width: 900px) {
+  body .block1-contact .block1__goldenText-contact {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
