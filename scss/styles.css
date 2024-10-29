@@ -10916,16 +10916,17 @@ body .block5-contact {
 
 @media (max-width: 1150px) {
   body .block1-contact {
-    width: 95%;
+    width: 100%;
   }
   body .block1-contact .block1__header {
-    width: 95%;
+    width: 74%;
+    padding: 0;
   }
   body .block1-contact .block1__line {
-    width: 95%;
+    width: 74%;
   }
   body .block1-contact .block1__goldenText-contact {
-    width: 95% !important;
+    width: 74% !important;
   }
 }
 @media (max-width: 900px) {
