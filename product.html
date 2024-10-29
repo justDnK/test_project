@@ -32,7 +32,7 @@
                         </div>
                     </a>                                        
 
-                    <a href="">
+                    <a href="category.html">
                         <div class="link_menu">
                             <p>Категории</p>
                         </div>
@@ -44,7 +44,7 @@
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="contact.html">
                         <div class="link_menu">
                             <p>Контакты</p>
                         </div>
@@ -61,13 +61,13 @@
                 </label>
         
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="#">Главная</a></li>
+                    <li><a class="menu__item" href="index.html">Главная</a></li>
                     <li><a class="menu__item" href="#">Корзина</a></li>
                     <li><a class="menu__item" href="#">Корпоративные подарки</a></li>
                     <li><a class="menu__item" href="#">Опт</a></li>
-                    <li><a class="menu__item" href="#">Категории</a></li>
-                    <li><a class="menu__item" href="#">Товары</a></li>
-                    <li><a class="menu__item" href="#">Контакты</a></li>
+                    <li><a class="menu__item" href="category.html">Категории</a></li>
+                    <li><a class="menu__item" href="catalog.html">Товары</a></li>
+                    <li><a class="menu__item" href="contact.html">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -255,7 +255,7 @@
         </div>
     </div>
 
-    <div class="block5">
+    <div class="block5 block5-product">
         <div class="block5__container">
             <div class="block_textes">
                 <h1>Свяжитесь с нами</h1>
@@ -400,6 +400,26 @@
                 }
             });
         });
+
+        // ---------------------
+
+        let slider = document.querySelector('.block2__slider-product');
+        let form = document.querySelector('.form__group-1');
+        let buttonBurger = document.querySelector('.menu__btn');
+        let number = 0;
+
+        buttonBurger.addEventListener('click', ()=> {
+            slider.classList.add('blockNoneElement');
+            form.classList.add('blockNoneElement');
+            number += 1;
+
+            if((number % 2) == 0) {
+            slider.classList.remove('blockNoneElement');
+            form.classList.remove('blockNoneElement');
+        } else {
+            number += 0;
+        }
+        })
 
     </script>
 </body>

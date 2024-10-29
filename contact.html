@@ -32,19 +32,19 @@
                         </div>
                     </a>                                        
 
-                    <a href="">
+                    <a href="category.html">
                         <div class="link_menu">
                             <p>Категории</p>
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="catalog.html">
                         <div class="link_menu">
                             <p>Товары</p>
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="contact.html">
                         <div class="link_menu">
                             <p>Контакты</p>
                         </div>
@@ -61,13 +61,13 @@
                 </label>
         
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="#">Главная</a></li>
+                    <li><a class="menu__item" href="index.html">Главная</a></li>
                     <li><a class="menu__item" href="#">Корзина</a></li>
                     <li><a class="menu__item" href="#">Корпоративные подарки</a></li>
                     <li><a class="menu__item" href="#">Опт</a></li>
-                    <li><a class="menu__item" href="#">Категории</a></li>
-                    <li><a class="menu__item" href="#">Товары</a></li>
-                    <li><a class="menu__item" href="#">Контакты</a></li>
+                    <li><a class="menu__item" href="category.html">Категории</a></li>
+                    <li><a class="menu__item" href="catalog.html">Товары</a></li>
+                    <li><a class="menu__item" href="contact.html">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -210,5 +210,25 @@
             </a>
         </div>
     </div>
+
+    <script>
+        let form = document.querySelector('.block5-contact');
+        let form2 = document.querySelector('.footer-category');
+        let buttonBurger = document.querySelector('.menu__btn');
+        let number = 0;
+
+        buttonBurger.addEventListener('click', ()=> {
+            form.classList.add('blockNoneElement');
+            form2.classList.add('blockNoneElement');
+            number += 1;
+
+            if((number % 2) == 0) {
+            form.classList.remove('blockNoneElement');
+            form2.classList.remove('blockNoneElement');
+        } else {
+            number += 0;
+        }
+        })
+    </script>    
 </body>
 </html>

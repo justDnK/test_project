@@ -71,11 +71,11 @@
         <!--  -->
 
         <div class="block1__mainText-2">
-            <p>Каталог</p>
+            <p class="text1">Каталог</p>
         </div>
 
         <div class="block1__goldenText-2">
-            <p>Главная / Каталог</p>
+            <p class="text2">Главная / Каталог</p>
         </div>
 
         <div class="block2__slider">
@@ -1516,29 +1516,48 @@
 
         //---------------------------------------------------------------- 
 
-        let cards_5 = document.querySelector('.cards-catalog_5');
-        let allCards_5 = document.querySelectorAll('.card');
-        let buttons_5 = document.querySelectorAll('.cards_slider-catalog_5 button');
-        let prevBtn_5 = document.querySelector('.prev-catalog_5');
-        let nextBtn_5 = document.querySelector('.next-catalog_5');
+        let sliderAdaptive = document.querySelector('.adaptive-slide');
+        let form = document.querySelector('.form__group-1');
+        let buttonBurger = document.querySelector('.menu__btn');
+        let number = 0;
 
-        cards_5.addEventListener('wheel', (event) => {
-            if (event.deltaY > 0) {
-                event.currentTarget.scrollLeft += event.currentTarget.clientWidth;
-            } else {
-                event.currentTarget.scrollLeft -= event.currentTarget.clientWidth;
-            }
-        });
+        let slider = document.querySelector('.block2__slider-catalog');
+        let slider2 = document.querySelector('.block2__slider-catalog_2')
+        let slider3 = document.querySelector('.block2__slider-catalog_3');
+        let slider4 = document.querySelector('.block2__slider-catalog_4');
 
-        buttons_5.forEach((button) => {
-            button.addEventListener('click', (event) => {
-                if (event.currentTarget.classList.contains('next-catalog_5')){
-                    cards_5.scrollLeft += cards_5.clientWidth;
-                } else {
-                    cards_5.scrollLeft -= cards_5.clientWidth;
-                }
-            });
-        });
+        let text1 = document.querySelector('.text1');
+        let text2 = document.querySelector('.text2');
+
+        let search = document.querySelector('.block1__search');
+
+        buttonBurger.addEventListener('click', ()=> {
+            sliderAdaptive.classList.add('blockNoneElement');
+            slider.classList.add('blockNoneElement');
+            slider2.classList.add('blockNoneElement');
+            slider3.classList.add('blockNoneElement');
+            slider4.classList.add('blockNoneElement');
+            text1.classList.add('blockNoneElement');
+            text2.classList.add('blockNoneElement');
+            search.classList.add('blockNoneElement');
+
+            form.classList.add('blockNoneElement');
+            number += 1;
+
+            if((number % 2) == 0) {
+            sliderAdaptive.classList.remove('blockNoneElement');
+            slider.classList.remove('blockNoneElement');
+            slider2.classList.remove('blockNoneElement');
+            slider3.classList.remove('blockNoneElement');
+            slider4.classList.remove('blockNoneElement');
+            text1.classList.remove('blockNoneElement');
+            text2.classList.remove('blockNoneElement');
+            form.classList.remove('blockNoneElement');
+            search.classList.remove('blockNoneElement');
+        } else {
+            number += 0;
+        }
+        })
 
     </script>
 </body>
